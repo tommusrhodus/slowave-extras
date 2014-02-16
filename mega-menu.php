@@ -88,8 +88,10 @@ function tucson_ebor_mega_menu( $atts, $content = null ) {
 		
 	$output .= '<ul class="circled">';
 	
+	if($items){
 	foreach( $items as $item ){
 		$output .= '<li><a href="' . $item->url . '">'. $item->title .'</a></li>';
+	}
 	}
 				
 	$output .= '</ul>';
